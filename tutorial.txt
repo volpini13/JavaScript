@@ -1,0 +1,358 @@
+Boas práticas na programação:
+
+1) Documentação
+/**
+* Descrição do código 
+* @author Arthur Garcia Volpini
+* @link https://github.com/arthurvolpini
+*/
+
+2) Código limpo
+- Não abusar de comentário
+
+3) Nomeação:
+   - Não usar caracteres especias, espaços e acentos
+   - Nomes de arquivos, variáveis, funções devem ser escrito com letra em caixa baixa(minúscula) Iniciar com caixa alta (maiúscila) apenas em classes ou modelos, 
+   - Definir nomes que tenham relação com o problema a ser resolvido
+
+4) Alinhamento (identação de código) 
+
+5) Quanto menos códigos usados para resolver o problema, melhor
+   ________________________________________________________________________
+comandos de terminal:
+
+cls ou clear (limpar a tela)
+node -v (exibe a versão do node)
+cd pasta (entrar na pasta)
+cd .. (voltar um nível)
+node arquivo.js (executar um arquivo JavaScript)
+dir ou ls (listar os arquivos de diretórios)
+________________________________________________________________________
+VSCode: Dicas
+
+Combinação de teclas <alt><shift><f> //alinhamento do código
+Mais dicas: VS Comparadores: Produtividade infimita (repositório)
+________________________________________________________________________
+JavaScript:
+
+Características
+-Trabalha com sentencas e não linhas de código
+- ; é opcional
+console.clear (limpar a tela do console)
+console.log(escrever no console)
+// comentários de linhas
+Podemos usar aspas " " ou ' ' 
+Não podemos usar aspas diferentes " '
+Dica: usar em "textos" aspas
+      usar em bibliotecas ou caminhos 'apostrofo'
+________________________________________________________________________
+Operadores:
+
+Observações: 
+- Regra de precedência
+- % (não calcula porcentagem e sim o resto da divisão)
+Ex:
+|               |    3
+|   10          |________________ 
+|                    3|
+|    1
+
+
+
+Comparadores de igualdade:
+NÃO USAR == !=
+
+Operadores lógicos:
+Dica:
+________________________________________________________________________
+Estudo das variáveis
+
+-String (caracteres)
+-Numéricas (números)
+-Booleanas (verdadeiro ou falso)
+
+Obs: No JS as variáveis sa dinâmicamente tipadas
+const (criar uma constância)
+var ou let (criar uma variável)
+ATENÇÃO !!! Não usar o var\
+
+Tipagem dinâmica
+No JavaScript o tipo String é definido quando o conteúdo da variável estiver entre aspas ""
+
+Variáveis numéricas podem ser números inteiros e não inteiros
+Observação: , (vírgula é um caractere e não um número)
+se necessário converter a entrada de dados de "," para "."
+.replace(",",".")
+
+Na entrada de dados numéricos via terminal ou formulário é necessário converter para números 
+Classe Number
+
+
+________________________________________________________________________
+Git e GitHub:
+
+Material de apoio:
+https://www.youtube.com/playlist?list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj
+
+Configurando o Git
+-Instalar o Git
+abrir o git bash
+git config --global user.name "seu nome"
+git config --global user.email "seu email GitHub"
+
+git clone link_do_repositório (clonar repositório na máquina local)
+
+Observaçõe: digitar os comandos na raiz do repositório
+git status (verifica o status do repositório local em relação ao GitHub)
+git add . (adiciona todas as alterações)
+git commit -m "fundamentos"<----- (nome da pasta)
+git push
+
+________________________________________________________________________
+NODE - Plataforma para uso de JS fora do browser(navegador)
+ |__ V8 (google chrome)
+ |__ bibliotecas C / C++
+ |__ pacotes npm (node packager manager)
+ npm ls (lista os pacotes)
+ npm i ou npm install (instala um pacote) 
+ npm r nome do pacote (remove o pacote)
+
+ pacote == módulo = bibliotecas
+ para usar um pacote é necessário fazer a importação no inicío do código (logo abaixo do cabeçalho de documentação)
+
+ ________________________________________________________________________
+ Algorítmo: "receita de bolo"
+
+Exemplo 1:
+Objetivo: Calcular a média de 2 notas
+
+              nota 1 + nota 2     
+Média = __________________________
+                     2
+
+Variáveis: nota1, nota2, media 
+
+Entrada: nota1 , nota2
+Processamento: media = (nota1 + nota2) /2
+Saída: media
+
+________________________________________________________________________
+Exemplo 2:
+Desenvolver um app modo console para cálculo de porcentagem:
+Ex: 10% DE 200 = 20
+      x     y    valor
+
+Algorítmo: 
+
+valor * 100 = y * x
+
+y------------- 100%
+valor ----------- x
+
+valor x 100 = 200 x 10
+valor = 2000/100
+valor = 20
+
+valor = (x * y) / 100 //formula de porcentagem
+
+//Variáveis
+x,y,valor
+
+//entrada
+x,y
+
+//Processamento
+valor = (x * y) / 100
+
+//Saída
+valor
+
+________________________________________________________________________
+Exercício:
+Desenvolver um app para calcular valor do desconto:
+Ex: 
+Valor total: 200.00
+Desconto: 5%
+total com desconto: 10.00
+
+200     100
+valor    5
+
+200*5 = 100/valor
+1000 = 100/valor
+valor = 10
+
+
+console.log(`${total} reais o valor total com ${desconto}% de desconto fica no de valor final de: ${totalDesconto.toFixed(2)}`)
+
+Exercício 2:
+Desenvolver um app no console para conversão de moeda (real para euro)
+
+________________________________________________________________________
+
+Estrutura de controle
+
+condicionais
+if if-else (encadeamento/aninhamento else-if) switch-case 
+
+repetições
+for while do-white 
+
+if (condição) {
+      //condição verdadeira
+}
+
+if condição {
+      //condição verdadeira
+}else {
+            //condição falsa
+      }
+
+      Observações:
+      1) sempe uma resposta será exibida indepedente da condição
+      2) Não pode existir uma condição verdadeira e falsa ao mesmo tempo
+
+
+Exemplo de uso da estrutura else-if
+No exemplo cálculo da média estabeler as seguintes condições
+1) Se o aluno tiver média < 2 reprovado
+2) Se a média do aluno estiver entre 2(inclusive) e 5(não incluir o 5) (RECUPERAÇÃO)      
+3) Se a média for igual ou superior a 5(Aprovado)
+
+Resumindo
+If(condição 1 ) {
+      //condição 1 verdadeira
+} else if(condição 2) {
+      //condição 2 verdadeira
+} else if(condição 3){
+      //condição 3 verdadeira
+} else {
+      //nenhuma das condições anteriores verdadeiras
+}
+OBS: o final não é obrigatório
+
+Exercício 3:
+No Brasil, o voto pode ser proibido, obrigatório ou facultativo de acordo com os seguintes critérios
+idade < 16 (Proibido)
+idade entre 18 e 70 incluindo (obrigatório)
+idade 16, 17 ou acima de 70 (opcional)
+desenvolva mo console do JS um app para verificar em função da idade a obrugação ou não de votar____________________________________________________________________
+Estrutura de controle condicional: switch-case
+Sintaxe:
+Variável (numero inteiro ou letra)
+switch (variável){
+      case: 1 
+         //código se o valor da variável for igual a 1
+         break
+      case: 2 
+         //código se o valor da variável for igual a 1
+         break
+default
+      //código caso valor diferente de 1 ou 2
+      brear
+}
+
+Exercicio 4:
+desenvolva no console do JS um app que faça um sorteio de um jogo de dado,
+ao resutado associar usando switch case a imagem da face de um dado
+________________________________________________________________________
+Estruturas de controle - laços de repetições
+for
+while
+do-while
+
+for estrutura de repetição finitas(determinada)
+
+for(let i =1; condição; incremento/decremento) {
+      //início; repetir enquanto condição verdadeiras; i++ ou i--
+}
+
+//OBS; a variável declarada dentro da estrutura deve ser um número inteiro
+________________________________________________________________________
+While do-while - estruturas de repetições infinitas
+
+While(condição) {
+      //analisa e executa o código enquanto a condição for verdadeira
+}
+
+do {
+      //sempre executa o código uma vez indepedente da condição, depois se comporta como while
+} while(condição)
+________________________________________________________________________
+Exercício 6:
+Desenvolver um aplicativo para calcular a tabuada semelhante ao exemplo de aula usando a estrutura while no lugar do for
+
+________________________________________________________________________
+Funções:
+uma função JavaScript é um bloco de código que realiza uma tarefa específica ou calcula um valor. Você pode pensar nela como uma receita que você escreve uma vez e pode usar várias vezes sem precisar reescrever o código
+
+Nomeie funções de acordo com o problema que tem que ser resolvido, use verbos para nomear funções. Ex: calcular() cadastrar()
+
+Para criar uma função simples(literal) usamos a palavra reservada function, e escolhemos um nome, conforme sintaxe abaixo:
+
+function nome() {
+      //código
+}
+
+Para executar uma função devemos escrever o nome da função seguido de parênteses:
+nome()
+
+//variaveis
+Tipos primtivos: string, number, Boolean
+Outros tipos: functionz object
+
+//Funções em JavaScript
+
+-literais (nome)
+-atribuídas (variável) "Função anônima"
+São funções atribuídas a uma constante ou uma variável onde o resultade de processamento da função é armazenado e pode ser utilizado, além disso funções atribuídas podem sr simplificadas
+(arrow function)
+
+Atividade 3 (Avaliação em Dupla)
+Desenvolver uma calculadora no console usando funções conforme modelo abaixo:
+
+Calculadora
+Digite o primeiro número: 10
+Digite o segundo número: 2
+Opções
+1: somar
+2: subtrair
+3: multipicar
+4: dividir
+5: calcular a porcentagem
+
+Digite a opção desejada: 3
+a multiplicação de 10 X 2 = 20
+
+
+if (somar) {
+    console.log(`${num1} + ${num2} = ${num1 + num2}`)
+} else if (subtrair) {
+    console.log(`${num1} - ${num2} = ${num1 - num2}`)
+}
+
+________________________________________________________________________
+POO  
+
+- Abstração (Classe Modelo)
+- Herança 
+- Polomorfismo
+
+- Encapsulamento (Segurança)
+Slides de Apoio:  (pag 49 a 60)
+https://github.com/professorjosedeassis/javaSE/tree/master
+
+Obs: Para crtiar uma classe modelo usamos uma letra maiúscula no início
+
+No JS a Classe modelo é uma função
+
+Sempre que existir a palavra new, um objeto é criado(instanciado)
+
+O ponto após o objeto é usado para acessar os recursos(atributos e métodos) da classe modelo
+
+Polimorfismo: 
+Atenção para reescrever um método é necessário usar o "MESMO" nome do método original
+
+Atividade 4: 
+Slides 62 a 67 Exceto slide 65(POO Exercício 1 - Carros)<<<<<<< HEAD
+
