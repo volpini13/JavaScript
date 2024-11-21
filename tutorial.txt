@@ -356,3 +356,12 @@ Atenção para reescrever um método é necessário usar o "MESMO" nome do méto
 Atividade 4: 
 Slides 62 a 67 Exceto slide 65(POO Exercício 1 - Carros)<<<<<<< HEAD
 
+________________________________________________________________________
+Assincronismo
+A linguagem JavaScript é single thread ou seja, é necessário esperar a finalização de um processamento para iniciar outro
+
+1) funções callback (obsoleto)
+2) Promises (promessa)
+   .then (retorno positivo)
+   .catch(error)  (retorno falhou)
+3) async await
